@@ -4,7 +4,7 @@ const Data = ({ images, name, age, position, price }) => {
   return (
     <>
       <div className="rounded  overflow-hidden relative bg-gray-50 hover:shadow-md">
-        <Link to="/#">
+        <Link to="#">
           <img
             src={images}
             alt="Ronaldo"

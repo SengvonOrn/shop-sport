@@ -10,36 +10,41 @@ import {
   faArrowAltCircleRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import imagesUrl1 from "../assets/lionel-2008448_640.jpg";
-import imagesUrl2 from "../assets/player-7902240_640.jpg";
-import imagesUrl3 from "../assets/player-7902240_640.jpg";
-import imagesUrl4 from "../assets/player-7902240_640.jpg";
-import imagesUrl5 from "../assets/player-7902240_640.jpg";
-import imagesUrl6 from "../assets/lionel-2008448_640.jpg";
+import imagesUrl1 from "../assets/peb.png";
+import imagesUrl2 from "../assets/prak1.png";
+import imagesUrl3 from "../assets/jp.png";
+import imagesUrl4 from "../assets/korea.png";
+import imagesUrl5 from "../assets/pablo.jpg";
+import imagesUrl6 from "../assets/sano.jpg";
+import imagesUrl7 from "../assets/teylor.jpg";
+import imagesUrl8 from "../assets/sidone.jpg";
+import imagesUrl9 from "../assets/bunpachan.jpg";
+import imagesUrl10 from "../assets/cristion.jpg";
 // ======================>
-import tShord1 from "../assets/One.jpg";
-import tShord2 from "../assets/Two.jpg";
-import tShord3 from "../assets/Three.jpg";
-import tShord4 from "../assets/Four.jpg";
+import tShord1 from "../assets/t1.jpg";
+import tShord2 from "../assets/t2.jpg";
+import tShord3 from "../assets/t3.jpg";
+import tShord4 from "../assets/t4.jpg";
+
 // ======
-import linkin from "../assets/linkedin.256x256.png";
+import preah from "../assets/preah.png";
 
 const Main = () => {
   const data = [
     {
       id: 1,
       images: imagesUrl1,
-      name: "Lione Messei",
-      age: 36,
-      position: "key players of Enter maiami",
+      name: "Pep Muñoz",
+      age: 52,
+      position: "Coaching",
       price: "92",
     },
     {
       id: 2,
       images: imagesUrl2,
-      name: "Cristiono Ronaldo",
+      name: "Prakmoni udom",
       age: 36,
-      position: "key players of Enter maiami",
+      position: "Legend",
       price: "89",
     },
     {
@@ -74,16 +79,49 @@ const Main = () => {
       position: "key players of Enter maiami",
       price: "80",
     },
+    {
+      id: 7,
+      images: imagesUrl7,
+      name: "Liones messei",
+      age: 36,
+      position: "key players of Enter maiami",
+      price: "80",
+    },
+    {
+      id: 8,
+      images: imagesUrl8,
+      name: "Liones messei",
+      age: 36,
+      position: "key players of Enter maiami",
+      price: "80",
+    },
+    {
+      id: 9,
+      images: imagesUrl9,
+      name: "Liones messei",
+      age: 36,
+      position: "key players of Enter maiami",
+      price: "80",
+    },
+    {
+      id: 10,
+      images: imagesUrl10,
+      name: "Liones messei",
+      age: 36,
+      position: "key players of Enter maiami",
+      price: "80",
+    },
   ];
+  ///===================
   const images = [
     { id: 1, images: tShord1, price: "$35" },
-    { id: 2, images: tShord2, price: "$17" },
-    { id: 3, images: tShord3, price: "$15" },
+    { id: 2, images: tShord4, price: "$17" },
+    { id: 3, images: tShord2, price: "$15" },
     { id: 4, images: tShord4, price: "$23" },
-    { id: 5, images: tShord3, price: "$15" },
+    { id: 5, images: tShord2, price: "$15" },
     { id: 6, images: tShord4, price: "$23" },
-    { id: 7, images: tShord3, price: "$15" },
-    { id: 8, images: tShord1, price: "$23" },
+    { id: 7, images: tShord2, price: "$15" },
+    { id: 8, images: tShord4, price: "$23" },
   ];
   //=================SideLeft===================>
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -128,7 +166,7 @@ const Main = () => {
           </div>
           {/* ============================Btn Search================================= */}
 
-          <div className="flex   w-400 mx-2 overflow-hidden bg-white  justify-center border-borderWidth border-gray-300 shadow">
+          <div className="flex w-400 mx-2 overflow-hidden bg-white  justify-center border-borderWidth border-gray-300 shadow">
             <div className="flex w-full items-center">
               <span className="px-2 text-gray-500">
                 <FontAwesomeIcon icon={faSearch} />
@@ -158,13 +196,18 @@ const Main = () => {
                 <FontAwesomeIcon icon={faArrowAltCircleLeft} />
               </span>
             </button>
-            <ul className="gap-x-6 hidden md:flex">
+            <ul className="gap-x-6 hidden md:flex items-center">
               <li className="cursor-pointer hover:text-indigo-500">
                 Categories
               </li>
-              <li className="cursor-pointer hover:text-indigo-500">Cources</li>
+              <li className="cursor-pointer hover:text-indigo-500">Tickets</li>
               <li className="cursor-pointer hover:text-indigo-500">Product</li>
-              <li className="cursor-pointer hover:text-indigo-500">Type</li>
+              <li className="cursor-pointer hover:text-indigo-500">Shop</li>
+              <li>
+                <button className="bg-white text-indigo-600 font-semibold py-2 px-4 rounded-md border-2 border-indigo-500">
+                  Sign in
+                </button>
+              </li>
             </ul>
           </div>
           {/* =======================AsideRight=================================================== */}
@@ -186,13 +229,18 @@ const Main = () => {
                 Categeries
               </li>
               <li className="pt-2 mt-2 ml-3  p-2  text-gray-600 hover:text-indigo-500  hover:bg-indigo-50 cursor-pointer rounded transition ease-out duration-500 ">
-                Cources
+                Tickets
               </li>
               <li className="pt-2 mt-2 ml-3  p-2  text-gray-600 hover:text-indigo-500  hover:bg-indigo-50 cursor-pointer rounded transition ease-out duration-500 ">
                 Product
               </li>
               <li className="pt-2 mt-2 ml-3  p-2  text-gray-600 hover:text-indigo-500  hover:bg-indigo-50 cursor-pointer rounded transition ease-out duration-500 ">
-                Type
+                Shop
+              </li>
+              <li>
+                <button className="bg-white w-full text-indigo-600 font-semibold py-2 px-4 rounded-md border-2 border-indigo-500">
+                  Sign in
+                </button>
               </li>
             </ul>
           </aside>
@@ -203,8 +251,14 @@ const Main = () => {
         <aside className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform translate-x-0">
           <div className="h-full px-3 py-4   dark:bg-white">
             <a href="#" className="flex items-center  ps-2.5 mb-5 ">
-              <img src={linkin} className="h-6 me-3 sm:h-7" alt="001" />
-              <span className="self-center text-xl font-semibold dark:text-gray-600">
+              <img
+                src={preah}
+                width={36}
+                height={36}
+                className=" me-3"
+                alt="001"
+              />
+              <span className="self-center text-xl font-semibold dark:text-gray-600 hover:text-blue-500 ">
                 Home
               </span>
               <button className="text-end w-full">
@@ -335,7 +389,7 @@ const Main = () => {
       <div className="p-4">
         <div className="p-4 rounded-lg dark:border-gray-700">
           {/* =====================box1============================= */}
-          <div className="grid md:grid-cols-3 grid-cols-2 w-full justify-center gap-3 mb-4">
+          <div className="grid md:grid-cols-5 grid-cols-2 w-full  justify-center gap-3 mb-4">
             {data.map((items) => {
               return <Data {...items} key={items.id} />;
             })}
@@ -347,11 +401,11 @@ const Main = () => {
             })}
           </div>
           {/* ==========================box3========================== */}
-          <div className="grid md:grid-cols-3 grid-cols-2 w-full justify-center gap-3 mb-4">
+          {/* <div className="grid md:grid-cols-3 grid-cols-2 w-full justify-center gap-3 mb-4">
             {data.map((items) => {
               return <Data {...items} key={items.id} />;
             })}
-          </div>
+          </div> */}
           {/* ==========================box4=========================== */}
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 mb-4 justify-center">
             {images.map((img) => {
@@ -360,7 +414,7 @@ const Main = () => {
           </div>
           {/* ========================box5============================== */}
 
-          <div className="grid md:grid-cols-3 grid-cols-2 w-full justify-center gap-3 mb-4">
+          <div className="grid md:grid-cols-5 grid-cols-2 w-full  justify-center gap-3 mb-4">
             {data.map((items) => {
               return <Data {...items} key={items.id} />;
             })}
@@ -368,8 +422,16 @@ const Main = () => {
         </div>
       </div>
       {/* ==================================================== */}
-      <footer className="flex justify-center">
-        <p>Thank you</p>
+      <footer className="flex flex-col items-center justify-center mb-11 px-5">
+        <h1 className="font-semibold text-3xl text-blue-700">
+          Preah Khan Reach Svay Rieng FC
+        </h1>
+        <div className="grid grid-cols-4 gap-x-5 mt-3">
+          <span className="font-semibold">Foothball</span>
+          <span className="font-semibold">The Club</span>
+          <span className="font-semibold">The Legend</span>
+          <span className="font-semibold">Team</span>
+        </div>
       </footer>
     </>
   );
